@@ -157,6 +157,7 @@ public class DB {
         builder.addArgument("--console");
         builder.addArgument("--skip-grant-tables");
         builder.addArgument("--max_allowed_packet=64M");
+        builder.addArgument("--lower_case_table_names=0");
         builder.addFileArgument("--basedir", baseDir).setWorkingDirectory(baseDir);
         builder.addFileArgument("--datadir", dataDir);
         builder.addArgument("--port=" + config.getPort());
